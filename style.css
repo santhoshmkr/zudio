@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Add box-sizing for better layout control */
+}
+
+.hero {
+    position: relative;
+    background-color: #000;
+    /* Ensure positioning for children elements */
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    --color1: #fff;
+    --color2: #181818;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    color: yellow;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 10px;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
+
+
+/* Hero Section Styles */
+
+.hero-container {
+    position: relative;
+    height: 650px;
+    background: url('image/back-0.png') top left / cover no-repeat, url('image/back-1.png') bottom right / cover no-repeat, url('image/back-3.avif') bottom left / cover no-repeat, url('image/back-4.jpg') center / cover no-repeat, url('image/back-5.jpg') top right / cover no-repeat;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-left {
+    margin-top: 80px;
+}
+
+.hero-left ul {
+    list-style: none;
+}
+
+.hero-left ul li {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #000000;
+}
+
+.hero-left ul li a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: 800;
+}
+
+.hero-right {
+    margin-top: 50px;
+}
+
+.hero-right h2 {
+    color: #000;
+    font-size: 40px;
+}
+
+.hero-right h1 {
+    color: aqua;
+    font-size: 80px;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+@media(max-width:610px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {
+        margin-top: 10px;
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+    #check:checked~.menu {
+        right: 0;
+        ;
+    }
+    .hero {
+        background-color: #000;
+        height: 900px;
+    }
+    .hero-container {
+        margin: 0;
+        padding: 100px 20px;
+        height: 800px;
+        background: url('image/back-0.png') top left / cover no-repeat, url('image/back-1.jpg') bottom right / cover no-repeat, url('image/back-3.avif') bottom left / cover no-repeat, url('image/back-4.jpg') center / cover no-repeat, url('image/back-5.jpg') top right / cover no-repeat;
+        background-position: center;
+        background-size: contain;
+        /* background-repeat: repeat-y; */
+        background-repeat: none;
+    }
+    .hero-left {
+        margin-top: 0;
+    }
+    .hero-left ul {
+        list-style: none;
+    }
+    .hero-left ul li {
+        margin-top: 5px;
+        font-size: 24px;
+        color: #000000;
+    }
+    .hero-left ul li a {
+        font-size: 15px;
+        text-decoration: none;
+        color: yellow;
+        font-weight: 400;
+    }
+    .hero-right {
+        margin-top: 50px;
+    }
+    .hero-right h2 {
+        color: #000;
+        font-size: 20px;
+    }
+    .hero-right h1 {
+        color: aqua;
+        font-size: 40px;
+    }
+    footer {
+        background-color: #fdfdfd;
+        color: #030303;
+        padding: 12px 20px;
+        font-size: 15px;
+        /* z-index: -1; */
+        /* margin-bottom: 0; */
+        /* margin-top: 150px; */
+    }
+}
