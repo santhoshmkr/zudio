@@ -167,7 +167,7 @@ footer {
     }
     .hero {
         background-color: #000;
-        height: auto;
+        height: 100%;
     }
     .hero-container {
         margin: 0;
