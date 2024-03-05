@@ -167,12 +167,12 @@ footer {
     }
     .hero {
         background-color: #000;
-        height: 900px;
+        height: auto;
     }
     .hero-container {
         margin: 0;
         padding: 100px 20px;
-        height: 800px;
+        height: 500px;
         background: url('image/back-0.png') top left / cover no-repeat, url('image/back-1.jpg') bottom right / cover no-repeat, url('image/back-3.avif') bottom left / cover no-repeat, url('image/back-4.jpg') center / cover no-repeat, url('image/back-5.jpg') top right / cover no-repeat;
         background-position: center;
         background-size: contain;
