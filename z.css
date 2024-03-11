@@ -245,11 +245,6 @@ body {
         right: 0;
         ;
     }
-    .location {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1fr));
-        gap: 10px;
-    }
     #foot {
         background-color: #000;
         color: #fff;
