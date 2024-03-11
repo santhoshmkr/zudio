@@ -143,7 +143,7 @@ body {
 
 .location {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
 }
 
@@ -244,6 +244,11 @@ body {
     #check:checked~.menu {
         right: 0;
         ;
+    }
+    .location {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1fr));
+        gap: 10px;
     }
     #foot {
         background-color: #000;
