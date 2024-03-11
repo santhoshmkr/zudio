@@ -114,6 +114,7 @@ body {
 
 #state {
     display: block;
+    width: 200px;
 }
 
 #cityDefault {
@@ -130,6 +131,17 @@ body {
     width: 50%;
 }
 
+#cityDefault,
+#cityAndhra,
+#cityAsam,
+#cityBangalore,
+#cityBihar,
+#cityGoa,
+#cityManipur,
+#cityTamilnadu {
+    width: 200px;
+}
+
 .stores {
     margin: 10px;
     width: 100%;
@@ -142,6 +154,8 @@ body {
 }
 
 .location {
+    margin: 10px;
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
